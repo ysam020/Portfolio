@@ -1,0 +1,40 @@
+.banner {
+  background-size: cover;
+
+  padding: 10px;
+  text-align: left;
+}
+
+.banner-inner {
+  margin: 30px;
+  padding: 100px;
+  border-radius: 30px;
+  background-color: rgba(249, 250, 251, 0.01);
+  backdrop-filter: blur(1px);
+}
+
+.banner h1 {
+  color: #e3e3e3;
+  font-size: 112px;
+  font-weight: 475;
+}
+
+.banner p {
+  color: #e3e3e3;
+  font-size: 22px;
+  font-weight: 400;
+  width: 60%;
+}
+
+.banner button {
+  border-radius: 48px;
+  cursor: pointer;
+  padding: 20px 48px;
+  background-color: #a8c7fa;
+  color: #062e6f;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 475;
+  border: none;
+  margin-top: 30px;
+}

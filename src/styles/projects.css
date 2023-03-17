@@ -1,0 +1,156 @@
+.projects {
+  text-align: left;
+}
+
+.projects-col-1 {
+  padding: 80px 40px;
+}
+
+.projects-frame {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projects h2 {
+  font-size: 57px;
+  padding: 30px 0;
+}
+
+.projects p {
+  margin-top: 20px;
+}
+
+.projects-card-container {
+  margin-top: 30px;
+}
+
+.projects-card {
+  display: flex;
+  text-align: left;
+  background-color: #f7fafd;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.projects-card:hover {
+  background-color: #c1e7fe;
+}
+
+.projects-card > div {
+  flex: 1;
+}
+
+.projects-card p {
+  margin: 0;
+}
+
+.icon-wrapper-svg {
+  width: 10%;
+}
+
+.project-live-link {
+  border-radius: 48px;
+  cursor: pointer;
+  padding: 20px 48px;
+  background-color: #a8c7fa;
+  color: #062e6f;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 475;
+  border: none;
+  margin-top: 30px;
+}
+
+.projects-divider {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.projects-col-2 {
+  position: sticky;
+  padding: 0;
+}
+
+.projects-frame-img {
+  background-size: cover;
+  border-radius: 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects-frame-img.projects-frame-1-img {
+  background-image: url("../assets/images/wapp.webp");
+}
+
+.projects-frame-img.projects-frame-2-img {
+  background-image: url("../assets/images/expense.webp");
+}
+
+.projects-frame-img.projects-frame-3-img {
+  background-image: url("../assets/images/corretto.webp");
+}
+
+.projects-2-frame-img.projects-frame-4-img {
+  background-image: url("../assets/images/wapp.webp");
+}
+
+.projects-card:hover .icon-wrapper-svg > path {
+  fill: #01629b !important;
+}
+
+.projects-card:hover .MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium {
+  color: #fff !important;
+}
+
+/* ---------------------------- */
+
+.card {
+  margin-bottom: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.card > a {
+  background-color: #f8fafd;
+  background-color: rgba(249, 250, 251, 0.05) !important;
+  backdrop-filter: blur(1px) !important;
+  border-radius: 20px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.card > div:hover {
+  background-color: #c1e7fe;
+}
+
+.card .card-content {
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.card-img {
+  background-size: cover;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.other-projects-card-1 .card-img {
+  background-image: url("../assets/images/depot.png");
+  background-position: right;
+}
+
+.other-projects-card-2 .card-img {
+  background-image: url("../assets/images/wiofy.png");
+}
+
+.other-projects-card-3 .card-img {
+  background-image: url("../assets/images/javascript.png");
+}

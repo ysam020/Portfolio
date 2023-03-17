@@ -1,0 +1,20 @@
+.landing {
+  width: 100%;
+  background-image: url("../assets/images/home-bg.webp");
+}
+
+.landing-blur {
+  background-color: rgba(249, 250, 251, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.landing h2 {
+  font-size: 57px;
+  line-height: 64px;
+  font-weight: 475;
+  color: #e3e3e3;
+  text-align: left;
+  padding: 50px 0;
+}
+
+/* --------------------------------------------------------------------------- */

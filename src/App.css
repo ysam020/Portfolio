@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navrail {
+  flex: 1;
+  background-color: #f3f6fb;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+  height: 100vh;
+  position: fixed;
+  min-width: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.footer {
+  padding: 120px 0 80px;
+  margin: auto;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.footer-divider {
+  margin-bottom: 80px;
+}
+
+.footer-column {
+  padding-left: 50px;
+}
+
+.footer-column-1 {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-column-1 h2 {
+  padding: 20px 0 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  background-color: rgba(249, 250, 251, 0.01);
+  backdrop-filter: blur(1px);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(249, 250, 251, 0.4);
+}
+
+.form input.error,
+.form textarea.error {
+  background-color: #ffcccb9f;
+}
+
+.form input.success,
+.form textarea.success {
+  background-color: #ccffcd7f;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000;
+}
+
+.form textarea {
+  max-height: 150px;
+}
+
+.form button {
+  border-radius: 48px;
+  cursor: pointer;
+  padding: 15px 35px;
+  background-color: #a8c7fa;
+  color: #062e6f;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 475;
+  border: none;
+}
+
+.form button[disabled] {
+  cursor: not-allowed;
 }

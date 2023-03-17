@@ -1,0 +1,53 @@
+.education {
+  padding: 40px;
+}
+
+.education-card {
+  border-left: 1px solid red;
+  position: relative;
+  padding: 1px 30px;
+}
+
+.education-card::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+}
+
+.education-col-1 {
+  position: sticky;
+}
+
+.education-col-2 {
+  overflow: hidden;
+}
+
+.photo-card {
+  border-radius: 20px;
+  position: sticky;
+  top: 50px;
+  background-color: rgba(249, 250, 251, 0.01);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.photo-card img {
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.photo-card p {
+  margin-top: 20px;
+  width: 100% !important;
+  text-align: center !important;
+}

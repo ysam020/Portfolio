@@ -1,0 +1,37 @@
+.navrail {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+  padding: 40px 0;
+  background-color: transparent !important;
+  left: -5px !important;
+  width: 70px !important;
+}
+
+.navrail-icons {
+  flex: 1;
+  width: 60px !important;
+  left: 0;
+}
+
+.navrail-icons a {
+  font-size: 11px;
+  line-height: 16px;
+  color: #1f1f1f;
+  font-weight: 500;
+  text-decoration: none;
+  display: block !important;
+  margin-bottom: 10px;
+}
+
+.navrail-icons button {
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.navrail-icons a.active button,
+.navrail-icons a:hover button {
+  background-color: #b7daef;
+}
