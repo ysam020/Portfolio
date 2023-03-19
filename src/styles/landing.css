@@ -9,7 +9,7 @@
 }
 
 .landing h2 {
-  font-size: 57px;
+  font-size: 50px;
   line-height: 64px;
   font-weight: 475;
   color: #e3e3e3;
@@ -17,4 +17,21 @@
   padding: 50px 0;
 }
 
-/* --------------------------------------------------------------------------- */
+@media only screen and (max-width: 1200px) {
+  .landing h2 {
+    font-size: 44px;
+    padding: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .landing h2 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .landing h2 {
+    font-size: 28px;
+  }
+}

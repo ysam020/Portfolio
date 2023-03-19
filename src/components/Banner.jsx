@@ -27,7 +27,7 @@ function Banner() {
           & developer with a passion for web design. I enjoy developing simple,
           clean and slick websites that provide real value to the end user.
         </p>
-        <button id="downloadCV" onClick={download}>
+        <button id="downloadCV" onClick={download} aria-label="download-cv">
           Get Resume
         </button>
       </div>

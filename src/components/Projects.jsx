@@ -35,7 +35,7 @@ function Projects() {
     <>
       <Container fluid className="projects" id="projects">
         <Row>
-          <Col className="projects-col-1">
+          <Col xs={12} md={6} className="projects-col-1">
             {projectData.map((project) => {
               return (
                 <div
@@ -92,27 +92,29 @@ function Projects() {
             <div className={`projects-frame-img  ${imgClass}`}></div>
           </Col>
         </Row>
-      </Container>
 
-      <Container className="projects-section-2">
-        <h2>Other noteworthy projects</h2>
-        <Row>
-          {otherProjectsData.map((project) => {
-            return (
-              <Col
-                key={project.id}
-                className={`card other-projects-card-${project.id}`}
-              >
-                <Link to={project.url} target="_blank">
-                  <ImageCard
-                    id={project.id}
-                    title={project.title}
-                    text={project.text}
-                  />
-                </Link>
-              </Col>
-            );
-          })}
+        <Row className="projects-section-2">
+          <h2>Other noteworthy projects</h2>
+          <Row>
+            {otherProjectsData.map((project) => {
+              return (
+                <Col
+                  xs={12}
+                  md={4}
+                  key={project.id}
+                  className={`card other-projects-card-${project.id}`}
+                >
+                  <Link to={project.url} target="_blank">
+                    <ImageCard
+                      id={project.id}
+                      title={project.title}
+                      text={project.text}
+                    />
+                  </Link>
+                </Col>
+              );
+            })}
+          </Row>
         </Row>
       </Container>
     </>

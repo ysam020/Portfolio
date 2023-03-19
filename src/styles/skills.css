@@ -1,5 +1,6 @@
 .skills {
   padding: 100px 30px;
+  padding-top: 0;
 }
 
 .skills-col {
@@ -15,4 +16,16 @@
 
 .skills img {
   width: 70%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .skills-col {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .skills {
+    padding-bottom: 30px;
+  }
 }

@@ -13,11 +13,6 @@
   justify-content: center;
 }
 
-.projects h2 {
-  font-size: 57px;
-  padding: 30px 0;
-}
-
 .projects p {
   margin-top: 20px;
 }
@@ -26,6 +21,7 @@
   margin-top: 30px;
 }
 
+/* -------------------------Cards------------------------ */
 .projects-card {
   display: flex;
   text-align: left;
@@ -71,6 +67,7 @@
   margin: 80px 0;
 }
 
+/* -------------------------Images--------------------------- */
 .projects-col-2 {
   position: sticky;
   padding: 0;
@@ -110,7 +107,16 @@
   color: #fff !important;
 }
 
-/* ---------------------------- */
+/* ----------------------------Other Projects------------------------------- */
+.projects-section-2 {
+  margin: 0;
+  padding: 20px;
+}
+
+.projects-section-2 .row {
+  margin: 0;
+  padding: 0;
+}
 
 .card {
   margin-bottom: 20px;
@@ -125,13 +131,10 @@
   border-radius: 20px;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
+  flex: 1;
 }
 
-.card > div:hover {
-  background-color: #c1e7fe;
-}
-
-.card .card-content {
+.card-content {
   padding: 30px 20px;
   text-align: left;
 }
@@ -142,15 +145,59 @@
   border-radius: 20px;
 }
 
+.card-content h3 {
+  font-size: 18px;
+}
+.card-content p {
+  font-size: 14px;
+}
+
 .other-projects-card-1 .card-img {
-  background-image: url("../assets/images/depot.png");
+  background-image: url("../assets/images/depot.webp");
   background-position: right;
 }
 
 .other-projects-card-2 .card-img {
-  background-image: url("../assets/images/wiofy.png");
+  background-image: url("../assets/images/wiofy.webp");
 }
 
 .other-projects-card-3 .card-img {
-  background-image: url("../assets/images/javascript.png");
+  background-image: url("../assets/images/javascript.webp");
+}
+
+/* -------------------------Responsive--------------------------- */
+@media only screen and (max-width: 992px) {
+  .projects-card h3 {
+    font-size: 18px;
+  }
+  .projects-card p {
+    font-size: 14px;
+  }
+  .project-live-link {
+    font-size: 20px;
+    padding: 15px 35px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .projects-col-1 {
+    padding: 0 40px;
+  }
+  .project-live-link {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+  .projects-frame {
+    min-height: auto;
+  }
+  .projects-divider {
+    margin: 40px 0;
+  }
+  .projects-frame-img {
+    display: none;
+  }
+  .card {
+    padding: 0;
+  }
 }

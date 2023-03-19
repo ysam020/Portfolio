@@ -36,9 +36,9 @@ function Education() {
   return (
     <Container fluid className="education" id="education">
       <Row>
-        <Col xs={4} className="education-col-1">
+        <Col xs={12} lg={4} className="education-col-1">
           <div className="photo-card">
-            <img src={require("../assets/images/profile.jpg")} alt="" />
+            <img src={require("../assets/images/profile.webp")} alt="" />
             <p>
               <a href="mailto:sameery.020@gmail.com">sameery.020@gmail.com</a>
               <br />
@@ -49,7 +49,7 @@ function Education() {
             <div className="social-links">
               <Link to="https://github.com/ysam020" target="_blank">
                 <Tooltip title="Github">
-                  <IconButton>
+                  <IconButton aria-label="github">
                     <GitHubIcon className={classes.icon} />
                   </IconButton>
                 </Tooltip>
@@ -57,7 +57,7 @@ function Education() {
 
               <Link to="https://www.linkedin.com/in/ysam090/" target="_blank">
                 <Tooltip title="Linkedin">
-                  <IconButton>
+                  <IconButton aria-label="linkedin">
                     <LinkedInIcon className={classes.icon} />
                   </IconButton>
                 </Tooltip>
@@ -104,7 +104,11 @@ function Education() {
                         margin: "30px 0 30px 20px",
                       }}
                     >
-                      <Typography variant="h6" component="span">
+                      <Typography
+                        variant="h6"
+                        component="span"
+                        sx={{ fontSize: "14px" }}
+                      >
                         {course} {score ? `- ${score}` : ""}
                       </Typography>
                       <Typography>{institute}</Typography>

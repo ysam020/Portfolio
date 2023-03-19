@@ -160,7 +160,7 @@ export default function ContactForm() {
             : ""
         }
       ></textarea>
-      <button type="submit" disabled={!isFormValid}>
+      <button type="submit" disabled={!isFormValid} aria-label="send-message">
         Send Message
       </button>
     </form>

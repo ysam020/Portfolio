@@ -1,6 +1,5 @@
 .banner {
   background-size: cover;
-
   padding: 10px;
   text-align: left;
 }
@@ -37,4 +36,47 @@
   font-weight: 475;
   border: none;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .banner h1 {
+    font-size: 80px;
+  }
+  .banner p {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .banner-inner {
+    padding: 40px;
+  }
+  .banner h1 {
+    font-size: 60px;
+  }
+  .banner p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .banner button {
+    font-size: 20px;
+    padding: 15px 35px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-inner {
+    margin: 10px;
+  }
+  .banner h1 {
+    font-size: 40px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .banner button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
 }

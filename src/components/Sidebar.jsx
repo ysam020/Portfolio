@@ -64,8 +64,8 @@ const Sidebar = () => {
             to={link.url}
             spy={true}
             smooth={true}
-            offset={-400}
-            duration={500}
+            offset={0}
+            duration={300}
           >
             <span key={link.id}>
               <Tooltip title={link.name} enterDelay={300} placement="right">
