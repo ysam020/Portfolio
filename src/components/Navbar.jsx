@@ -10,21 +10,9 @@ import Sidebar from "./Sidebar";
 
 const drawerWidth = "70px";
 
-function ResponsiveDrawer(props) {
+function ResponsiveDrawer() {
   return (
     <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-
-      <AppBar
-        position="fixed"
-        sx={{
-          display: { md: "none" },
-          backgroundColor: "#F3F6FA",
-        }}
-      >
-        <Toolbar disableGutters />
-      </AppBar>
-
       <Box
         component="nav"
         sx={{ width: { md: drawerWidth }, flexShrink: { md: 0 } }}
@@ -57,11 +45,9 @@ function ResponsiveDrawer(props) {
         component="main"
         sx={{
           flexGrow: 1,
-          p: 0,
           width: { md: `calc(100% - ${drawerWidth}px)` },
         }}
       >
-        <Toolbar sx={{ display: { md: "none" } }} />
         <Routes>
           <Route exact path="/" element={<Landing />} />
         </Routes>

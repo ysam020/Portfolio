@@ -1,18 +1,6 @@
 import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "../styles/education.css";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent, {
-  timelineOppositeContentClasses,
-} from "@mui/lab/TimelineOppositeContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import SchoolIcon from "@mui/icons-material/School";
-import CardMembershipIcon from "@mui/icons-material/CardMembership";
-import Typography from "@mui/material/Typography";
 import { educationData } from "../assets/data/EducationData";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { IconButton, Tooltip } from "@mui/material";
@@ -20,15 +8,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { makeStyles } from "@material-ui/core/styles";
-
-const useStyles = makeStyles((theme) => ({
-  icon: { width: "30px !important", height: "30px !important" },
-}));
+import TimelineComponent from "./Timeline";
+import Timeline from "@mui/lab/Timeline";
+import { timelineOppositeContentClasses } from "@mui/lab/TimelineOppositeContent";
 
 function Education() {
-  const classes = useStyles();
-
   useEffect(() => {
     Aos.init({ duration: 300 });
   }, []);
@@ -50,7 +34,12 @@ function Education() {
               <Link to="https://github.com/ysam020" target="_blank">
                 <Tooltip title="Github">
                   <IconButton aria-label="github">
-                    <GitHubIcon className={classes.icon} />
+                    <GitHubIcon
+                      sx={{
+                        width: "30px !important",
+                        height: "30px !important",
+                      }}
+                    />
                   </IconButton>
                 </Tooltip>
               </Link>
@@ -58,7 +47,12 @@ function Education() {
               <Link to="https://www.linkedin.com/in/ysam090/" target="_blank">
                 <Tooltip title="Linkedin">
                   <IconButton aria-label="linkedin">
-                    <LinkedInIcon className={classes.icon} />
+                    <LinkedInIcon
+                      sx={{
+                        width: "30px !important",
+                        height: "30px !important",
+                      }}
+                    />
                   </IconButton>
                 </Tooltip>
               </Link>
@@ -79,41 +73,13 @@ function Education() {
 
               return (
                 <div data-aos="fade-up-left" key={id}>
-                  <TimelineItem>
-                    <TimelineOppositeContent
-                      sx={{ m: "auto 0" }}
-                      align="right"
-                      variant="body2"
-                      color="text.secondary"
-                    >
-                      {year}
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                      <TimelineConnector />
-                      <TimelineDot
-                        sx={{
-                          backgroundColor: "#43A9DE",
-                        }}
-                      >
-                        {id <= 3 ? <SchoolIcon /> : <CardMembershipIcon />}
-                      </TimelineDot>
-                      <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent
-                      sx={{
-                        margin: "30px 0 30px 20px",
-                      }}
-                    >
-                      <Typography
-                        variant="h6"
-                        component="span"
-                        sx={{ fontSize: "14px" }}
-                      >
-                        {course} {score ? `- ${score}` : ""}
-                      </Typography>
-                      <Typography>{institute}</Typography>
-                    </TimelineContent>
-                  </TimelineItem>
+                  <TimelineComponent
+                    id={id}
+                    year={year}
+                    course={course}
+                    score={score}
+                    institute={institute}
+                  />
                 </div>
               );
             })}

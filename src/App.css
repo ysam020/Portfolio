@@ -1,4 +1,0 @@
-/* Hide space above content, where there was appbar */
-.MuiToolbar-root {
-  min-height: 0 !important;
-}

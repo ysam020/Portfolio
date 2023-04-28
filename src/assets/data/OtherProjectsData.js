@@ -3,7 +3,7 @@ export const otherProjectsData = [
     id: 1,
     title: "Depot",
     text: "An e-commerce website using Redux and React-redux for cart state management.",
-    url: "https://ysam020.github.io/Wiofy/",
+    url: "https://reactjs-depot.firebaseapp.com/ ",
   },
   {
     id: 2,
