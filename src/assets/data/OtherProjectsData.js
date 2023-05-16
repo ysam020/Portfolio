@@ -1,8 +1,8 @@
 export const otherProjectsData = [
   {
     id: 1,
-    title: "Depot",
-    text: "An e-commerce website using Redux and React-redux for cart state management.",
+    title: "Corretto",
+    text: "An e-commerce website using useReducer and useContext for cart state management.",
     url: "https://reactjs-depot.firebaseapp.com/ ",
   },
   {

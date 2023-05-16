@@ -92,7 +92,7 @@
 }
 
 .projects-frame-img.projects-frame-3-img {
-  background-image: url("../assets/images/corretto.webp");
+  background-image: url("../assets/images/depot.webp");
 }
 
 .projects-2-frame-img.projects-frame-4-img {
@@ -153,7 +153,7 @@
 }
 
 .other-projects-card-1 .card-img {
-  background-image: url("../assets/images/depot.webp");
+  background-image: url("../assets/images/corretto.webp");
   background-position: right;
 }
 

@@ -11,28 +11,30 @@ export const projectData = [
       "Used Firebase Firestore and storage for storing messages and media",
     repoIcon: <GitHubIcon />,
     repo: "https://github.com/ysam020/Wapp",
-    link: "https://reactjs-wapp.web.app/",
+    link: "https://wapp-c2920.firebaseapp.com/",
   },
   {
     id: 2,
     title: "Expense tracker app using React JS and React-apex-charts",
     description:
       "An expense tracker app where where you can manage your expenditure by tracking your incomes and expenses through simple graphs. You can watch your weekly, monthly or all transactions, category-wise transactions, and savings. Login through google account is required.",
-    cardTitle: "MUI Components",
-    cardInfo: "Worked with MUI Datagrid",
+    cardTitle: "React Apex Charts",
+    cardInfo:
+      "Used React Apex Charts for visual representation of expenses as graphs",
     repoIcon: <GitHubIcon />,
     repo: "https://github.com/ysam020/Expense-traker",
     link: "https://reactjs-expensetracker.web.app/",
   },
   {
     id: 3,
-    title: "E-commerce website using React hooks",
+    title: "E-commerce website using MERN stack",
     description:
-      "An e-commerce website using useContexts and useReducers for cart state management.",
-    cardTitle: "Form Validation",
-    cardInfo: "Form validations using Formik and Yup",
+      "An e-commerce website using the MERN stack (MongoDB, Express.js, React.js, Node.js) to provide a full-stack solution for online shopping.",
+    cardTitle: "Redux Thunk",
+    cardInfo:
+      "Implemented API integration using Redux Thunk, enabling asynchronous actions for fetching data from the server.",
     repoIcon: <GitHubIcon />,
-    repo: "https://github.com/ysam020/corretto",
-    link: "https://reactjs-corretto.web.app/",
+    repo: "https://github.com/ysam020/Depot-mern",
+    link: "https://depot-mern.netlify.app/",
   },
 ];
