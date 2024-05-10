@@ -1,5 +1,5 @@
 import React from "react";
-import cv from "../assets/resume/Sameer CV.pdf";
+import cv from "../assets/resume/Resume.pdf";
 import { Container } from "react-bootstrap";
 import "../styles/banner.css";
 
@@ -22,10 +22,12 @@ function Banner() {
           <br /> Sameer Yadav
         </h1>
         <p>
-          Since beginning my journey as a front-end web developer nearly 3 years
-          ago, I've learnt HTML, CSS, JS, React JS and Wordpress.I'm a designer
-          & developer with a passion for web design. I enjoy developing simple,
-          clean and slick websites that provide real value to the end user.
+          I've embarked on a journey as a Frontend Web Developer, mastering
+          skills in HTML, CSS, JavaScript, React JS, and WordPress. My role as
+          both a designer and developer has cultivated a deep passion for web
+          design. I specialize in creating websites that are not only
+          aesthetically pleasing but also highly functional, with a focus on
+          simplicity and user-friendliness.
         </p>
         <button id="downloadCV" onClick={download} aria-label="download-cv">
           Get Resume

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import ContactForm from "../forms/ContactForm";
-import { Tooltip } from "@material-ui/core";
+import Tooltip from "@mui/material/Tooltip";
 import { socialData } from "../assets/data/SocialData";
 import "../styles/footer.css";
 import FooterSVG from "./FooterSVG";

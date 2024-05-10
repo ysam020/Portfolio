@@ -51,12 +51,12 @@ export const skillsData = [
   },
   {
     id: 11,
-    title: "Bootstrap",
-    img: <img src={require("../images/bootstrap.webp")} alt="" />,
+    title: "AWS",
+    img: <img src={require("../images/aws.webp")} alt="" />,
   },
   {
     id: 12,
-    title: "Wordpress",
-    img: <img src={require("../images/wordpress.webp")} alt="" />,
+    title: "React Native",
+    img: <img src={require("../images/react.webp")} alt="" />,
   },
 ];
