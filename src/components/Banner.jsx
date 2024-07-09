@@ -22,12 +22,14 @@ function Banner() {
           <br /> Sameer Yadav
         </h1>
         <p>
-          I've embarked on a journey as a Frontend Web Developer, mastering
-          skills in HTML, CSS, JavaScript, React JS, and WordPress. My role as
+          I've embarked on a journey as a Full-Stack Web Developer, mastering
+          skills in HTML, CSS, JavaScript, React JS, and Node.js. My role as
           both a designer and developer has cultivated a deep passion for web
-          design. I specialize in creating websites that are not only
-          aesthetically pleasing but also highly functional, with a focus on
-          simplicity and user-friendliness.
+          design and development. I specialize in creating websites that are not
+          only aesthetically pleasing but also highly functional. Through my
+          professional experience, I have also gained proficiency in deploying
+          applications on AWS EC2, utilizing S3 for storage, and implementing
+          advanced Node.js techniques, including clustering and Redis caching.
         </p>
         <button id="downloadCV" onClick={download} aria-label="download-cv">
           Get Resume

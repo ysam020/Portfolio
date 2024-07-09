@@ -23,16 +23,4 @@ export const socialData = [
     name: "Linkedin",
     url: "https://www.linkedin.com/in/ysam090/",
   },
-  {
-    id: 3,
-    icon: <FacebookIcon sx={iconStyles} />,
-    name: "Facebook",
-    url: "https://www.facebook.com/profile.php?id=100004873478538",
-  },
-  {
-    id: 4,
-    icon: <InstagramIcon sx={iconStyles} />,
-    name: "Instagram",
-    url: "https://www.instagram.com/ysam020/",
-  },
 ];

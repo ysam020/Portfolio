@@ -158,11 +158,18 @@
 }
 
 .other-projects-card-2 .card-img {
-  background-image: url("../assets/images/wiofy.webp");
+  background-image: url("../assets/images/webauthn.webp");
+  background-position: center;
 }
 
 .other-projects-card-3 .card-img {
-  background-image: url("../assets/images/javascript.webp");
+  background-image: url("../assets/images/portfolio.webp");
+  background-position: top;
+}
+
+.other-projects-card-4 .card-img {
+  background-image: url("../assets/images/music.webp");
+  background-position: top;
 }
 
 /* -------------------------Responsive--------------------------- */
