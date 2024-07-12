@@ -23,4 +23,10 @@ export const otherProjectsData = [
     text: "Music streaming app using React Native and Expo",
     url: "https://github.com/ysam020/music-app.git",
   },
+  {
+    id: 5,
+    title: "Markdown Editor",
+    text: "React app to edit markdown files and preview them",
+    url: "https://github.com/ysam020/markdown.git",
+  },
 ];

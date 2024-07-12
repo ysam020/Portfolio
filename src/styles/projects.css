@@ -172,6 +172,11 @@
   background-position: top;
 }
 
+.other-projects-card-5 .card-img {
+  background-image: url("../assets/images/markdown.webp");
+  background-position: top;
+}
+
 /* -------------------------Responsive--------------------------- */
 @media only screen and (max-width: 992px) {
   .projects-card h3 {

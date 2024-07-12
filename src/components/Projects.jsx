@@ -100,7 +100,7 @@ function Projects() {
               return (
                 <Col
                   xs={12}
-                  md={3}
+                  md={4}
                   key={project.id}
                   className={`card other-projects-card-${project.id}`}
                 >
