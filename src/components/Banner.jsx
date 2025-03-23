@@ -22,14 +22,15 @@ function Banner() {
           <br /> Sameer Yadav
         </h1>
         <p>
-          I've embarked on a journey as a Full-Stack Web Developer, mastering
-          skills in HTML, CSS, JavaScript, React JS, and Node.js. My role as
-          both a designer and developer has cultivated a deep passion for web
-          design and development. I specialize in creating websites that are not
-          only aesthetically pleasing but also highly functional. Through my
-          professional experience, I have also gained proficiency in deploying
-          applications on AWS EC2, utilizing S3 for storage, and implementing
-          advanced Node.js techniques, including clustering and Redis caching.
+          MERN Stack Developer with 1.9 years of experience in building secure
+          and scalable web applications. Proficient in MongoDB, ExpressJS,
+          ReactJS, NodeJS, and AWS services. Expertise in data security
+          (AES-256, JWT, SSL, HSTS, 2FA), implementing WebSockets for real-time
+          communication, Protocol Buffers for efficient data serialization, and
+          Redis caching with MongoDB ChangeStreams for real-time updates.
+          Skilled in CI/CD using AWS CodePipeline, CodeBuild, and CodeDeploy,
+          with experience in autoscaling, load balancing, and offline
+          capabilities using Workbox.
         </p>
         <button id="downloadCV" onClick={download} aria-label="download-cv">
           Get Resume
